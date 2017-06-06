@@ -83,13 +83,13 @@ def livecategory(url):
 		url1  = tools.regex_from_to(a,'<playlist_url>','</playlist_url>').replace('<![CDATA[','').replace(']]>','')
 	
 		check = control.setting('ADULT')
+		
+		if not 'TWITCH TV' in name:
 
-		a = 'FRENCH', 'BALKANS', 'FILIPINO','HAITIAN','PORTUGUESE','ISRAEL','ITALIAN','AFGHAN/PERSIAN','ARABIC','GREEK','CHINESE','VIETNAMESE','HINDI','PUNJABI','URDU','SOUTH INDIAN','BANGLA','AFRICAN','POLISH','HATIAN'
-		if not any(s in name for s in a):
 			if check=='true':
 				tools.addDir(name,url1,2,icon,fanart,'')
 			else:
-				if not 'FOR ADULTS' in name:
+				if not 'ADULT XXX' in name:
 					tools.addDir(name,url1,2,icon,fanart,'')
 		
 def Livelist(url):
