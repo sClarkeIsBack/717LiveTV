@@ -1,0 +1,22 @@
+<addons>
+<addon id="plugin.video.717livetv"
+       name="[COLOR cyan]717 Live TV[/COLOR]"
+       version="1.0"
+       provider-name="sClarke">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">717 Live TV</summary>
+    <language>en</language>
+    <description lang="en">717 Live TV - Supplier of Great Quality and Stable Streams</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+</addons>
